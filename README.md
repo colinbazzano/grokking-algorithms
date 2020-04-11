@@ -56,12 +56,14 @@ O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
 
 ## Arrays and linked lists
 
-### Arrays:
+### Arrays (random access):
 
     Reading: O(1)
     Insertion: O(n)
+    Deletion: O(n)
 
-### Linked Lists:
+### Linked Lists (sequential access):
 
     Reading: O(n)
     Insertion: O(1)
+    Deletion: O(1)
