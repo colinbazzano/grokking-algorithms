@@ -53,3 +53,15 @@ Instead, we talk about how quickly the run time of an algorithm increases as the
 Run time of algorithms is expressed in Big O notation
 
 O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
+
+## Arrays and linked lists
+
+### Arrays:
+
+    Reading: O(1)
+    Insertion: O(n)
+
+### Linked Lists:
+
+    Reading: O(n)
+    Insertion: O(1)
