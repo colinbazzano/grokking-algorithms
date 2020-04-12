@@ -67,3 +67,8 @@ O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
     Reading: O(n)
     Insertion: O(1)
     Deletion: O(1)
+
+## Recursion
+
+    When you write a recursive function, you have to tell it when to stop recursing.
+    That's why every recursive function has two parts: the base case and the recursive case.

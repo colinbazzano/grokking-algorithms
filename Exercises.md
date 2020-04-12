@@ -50,3 +50,11 @@ My answer: Though reality uses an array, because we don't know when enoughs enou
 2.4 Downsides to the array would be the insertion, and possible deletion, of usernames in the array. When you add new users, they will be tagged onto the end, and you might run out of the memory to hold the users.
 
 2.5 I think that the hybrid data structure (array of linked lists) would be slower at searching, though the letter access is good, the searching of a linked list would not be ideal, however, insertion would be faster. You have 26 items to go through via random access, and tag onto the linked list. It's an ordered linked list, in a way.
+
+3.1 Look at the call stack and address what is going on from what is shown
+
+My Answer: First, there is a name, maggie, that is stored into memory. Then a Greet function is added to the stack. After that, it appears the name maggie is used again while calling a Greet2 function.
+
+3.2 Suppose you accidentally write a recursive function that runs forever. As you saw, your computer allocates memory on the stack for each function call. What happens to the stack when your recursive function runs forever?
+
+My Answer: It would continually build up functions to call on the stack, as it won't reach the base case to solve those functions
