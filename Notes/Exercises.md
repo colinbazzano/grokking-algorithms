@@ -58,3 +58,5 @@ My Answer: First, there is a name, maggie, that is stored into memory. Then a Gr
 3.2 Suppose you accidentally write a recursive function that runs forever. As you saw, your computer allocates memory on the stack for each function call. What happens to the stack when your recursive function runs forever?
 
 My Answer: It would continually build up functions to call on the stack, as it won't reach the base case to solve those functions
+
+4.1 Code can be found inside quicksort.py

@@ -72,3 +72,19 @@ O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
 
     When you write a recursive function, you have to tell it when to stop recursing.
     That's why every recursive function has two parts: the base case and the recursive case.
+
+    Often, when you're writing a recursive function involving an array, the base case is often an empty array or an array with one element.
+
+## Divide and Conquer
+
+    When you approach a problem, you should think,
+    "Can I solve this if I use divide and conquer?"
+
+    One example of D&C is quicksort.
+
+Euclid's algorithm is good to know, and you can learn more [here](https://www.khanacademy.org/computing/computer-science/cryptography.modarithmetic/a/the-euclidean-algorithm)
+
+Practical Divide and Conquer tactics:
+
+1. Figure out the base case. This should be the simplest possible case.
+2. Divide or decrease your problem until it becomes the base case.
