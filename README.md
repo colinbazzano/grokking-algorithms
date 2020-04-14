@@ -26,6 +26,14 @@ Try to guess what number I'm thinking of, 1-100. You would not be wise to start 
 
 Binary Search (when sorted) has a Big O runtime of: `O(log n)`
 
+## Inductive Proofs
+
+    They are one way to prove that your algorithm works. Each inductive proof has two steps:
+        1. The base case.
+        2. The inductive case
+    Can your algorithm hit the base case and perform the work on the half baked functions?
+    Can your algorithm grow in input size and still perform the way that you want it to?
+
 ## Big O Notation
 
     In a nutshell: It's not enough to know how long an algorithm takes to run - you need to know how the running time increases as the list size increases. That is where Big O notation comes in.

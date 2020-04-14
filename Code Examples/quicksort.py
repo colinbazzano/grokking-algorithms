@@ -6,6 +6,45 @@ Then, you will see that for a 1680 x 640 plot of land, if you have EVEN, SQUARE 
 
 """
 
+"""Quicksort
+
+Below is Actual Quicksort
+
+Steps:
+1. Pick a pivot.
+2. Partition the array into two sub-arrays: elements less than the pivot and elements greater than the pivot
+3. Call quicksort recursively on the two sub-arrays
+
+"""
+
+
+
+
+import random
+def quicksort(arr):
+    if len(arr) < 2:  # if it is an empty array or if it has one item
+        return arr  # Base case: arrays with 0 or 1 element are already "sorted"
+    else:
+        pivot = arr[0]  # recursive case
+        # sub array of all the elements less than the pivot
+        less = [i for i in arr[1:] if i <= pivot]
+        # sub array of all the elements greater than the pivot
+        greater = [i for i in arr[1:] if i > pivot]
+        return quicksort(less) + [pivot] + quicksort(greater)
+
+
+# def quicksort2(arr):
+#     if len(arr) < 2:
+#         return arr
+#     else:
+#         pivot = random.choice(arr)
+#         for i in arr[1:]:
+#             if i <= pivot:
+
+
+test_list = [12, 23, 34, 45, 98, 87, 76, 65, 54, 43]
+
+print("QUICKSORT:", quicksort(test_list))
 # Here is another divide and conquer strategy:
 
 # A Function to add the sum of numbers
@@ -36,5 +75,22 @@ or [7] (arbitrary number) because the sum would just be 7
 """
 # 4.1 Code
 
+# DOES NOT WORK
+# def recursive_binary(arr, target):
+#     low = 0
+#     high = len(arr)-1
+#     if low <= high:
+#         mid = (low + high) // 2
+#         guess = arr[mid]
+#         if guess == target:
+#             return mid
+#         elif guess > target:
+#             return recursive_binary(arr[low:mid], target)
+#         else:
+#             return recursive_binary(arr[mid:high], target)
+#     return None
 
-def recursive_sum(arr):
+
+# test = [45, 23, 53, 23, 26, 456, 85, 345, 13]
+
+# print(recursive_binary(test, 53))
