@@ -58,3 +58,15 @@ My Answer: First, there is a name, maggie, that is stored into memory. Then a Gr
 3.2 Suppose you accidentally write a recursive function that runs forever. As you saw, your computer allocates memory on the stack for each function call. What happens to the stack when your recursive function runs forever?
 
 My Answer: It would continually build up functions to call on the stack, as it won't reach the base case to solve those functions
+
+4.1 Code can be found inside quicksort.py
+
+4.5-4.8 How long would each of these operations take in Big O notation?
+4.5 - Printing the value of each element in an array
+My Answer: O(n) because it will grow linear.
+4.6 Doubling the value of each element in an array
+My Answer: O(n) because you are touching every item of the array
+4.7 Doubling the value of just the first element in an array
+My Answer: O(1), you are performing one thing on one item.
+4.8 Creating the multiplication table with all the elements in the array.
+My Answer: O(n^2) because it will grow exponentially as the input grows.

@@ -26,6 +26,14 @@ Try to guess what number I'm thinking of, 1-100. You would not be wise to start 
 
 Binary Search (when sorted) has a Big O runtime of: `O(log n)`
 
+## Inductive Proofs
+
+    They are one way to prove that your algorithm works. Each inductive proof has two steps:
+        1. The base case.
+        2. The inductive case
+    Can your algorithm hit the base case and perform the work on the half baked functions?
+    Can your algorithm grow in input size and still perform the way that you want it to?
+
 ## Big O Notation
 
     In a nutshell: It's not enough to know how long an algorithm takes to run - you need to know how the running time increases as the list size increases. That is where Big O notation comes in.
@@ -72,3 +80,19 @@ O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
 
     When you write a recursive function, you have to tell it when to stop recursing.
     That's why every recursive function has two parts: the base case and the recursive case.
+
+    Often, when you're writing a recursive function involving an array, the base case is often an empty array or an array with one element.
+
+## Divide and Conquer
+
+    When you approach a problem, you should think,
+    "Can I solve this if I use divide and conquer?"
+
+    One example of D&C is quicksort.
+
+Euclid's algorithm is good to know, and you can learn more [here](https://www.khanacademy.org/computing/computer-science/cryptography.modarithmetic/a/the-euclidean-algorithm)
+
+Practical Divide and Conquer tactics:
+
+1. Figure out the base case. This should be the simplest possible case.
+2. Divide or decrease your problem until it becomes the base case.
