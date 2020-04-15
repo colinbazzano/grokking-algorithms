@@ -85,6 +85,9 @@ O(log n) is faster than O(n), but gets a LOT faster as the list of items grows.
 
 ## Divide and Conquer
 
+    Divide and Conquer works by breaking a problem down into smaller and smaller pieces.
+    If you're using D&C on a list, the base case is probably an empty array or an array with 1 element
+
     When you approach a problem, you should think,
     "Can I solve this if I use divide and conquer?"
 
@@ -96,3 +99,23 @@ Practical Divide and Conquer tactics:
 
 1. Figure out the base case. This should be the simplest possible case.
 2. Divide or decrease your problem until it becomes the base case.
+
+## Hash Tables
+
+    It technical terminology, we'd say that a hash function "maps strings to numbers."
+
+    Hash Tables require a few things:
+
+    1. Consistency. Suppose you put in "apple" and get back "4". You should always get 4 back.
+    2. Different words => different numbers. In the best case, every different word should map to a different number.
+
+    Hash function + array = Hash Table!
+
+To avoid collisions in hash tables, you'll need
+
+1. A low load factor - number of items in a hash table OVER total number of slots
+2. A good hash function
+
+If you have 1 item in a hash table of 3, that is 1/3! If you are getting close to having a full
+hash table, you'll need to do what's called "resizing". A good rule of thumb is to create a hash table that is double the size.
+You should resize when your hash table is .7 load factor.

@@ -70,3 +70,11 @@ My Answer: O(n) because you are touching every item of the array
 My Answer: O(1), you are performing one thing on one item.
 4.8 Creating the multiplication table with all the elements in the array.
 My Answer: O(n^2) because it will grow exponentially as the input grows.
+
+5.1 Inconsistent
+5.2 Inconsistent
+5.3 Consistent
+5.4 Inconsistent
+5.5 D is the best to use
+5.6 B could be used, as could D
+5.7 Any could be used, except for A
