@@ -33,18 +33,27 @@ def quicksort(arr):
         return quicksort(less) + [pivot] + quicksort(greater)
 
 
-# def quicksort2(arr):
-#     if len(arr) < 2:
-#         return arr
-#     else:
-#         pivot = random.choice(arr)
-#         for i in arr[1:]:
-#             if i <= pivot:
+def quicksort2(arr):
+    if len(arr) < 2:
+        return arr
+    else:
+        pivot = random.choice(arr)
+        lhs = []
+        rhs = []
+        for i in arr:
+            if i < pivot:
+                lhs.append(i)
+            elif i > pivot:
+                rhs.append(i)
+        return quicksort2(lhs) + [pivot] + quicksort2(rhs)
 
 
-test_list = [12, 23, 34, 45, 98, 87, 76, 65, 54, 43]
+test_list = [40, 12, 12, 12, 12, 12, 23, 34, 45, 98, 87, 76, 65, 54, 43]
 
-print("QUICKSORT:", quicksort(test_list))
+# print("QUICKSORT:", quicksort(test_list))
+print("QUICKSORT2:", quicksort2(test_list))
+
+
 # Here is another divide and conquer strategy:
 
 # A Function to add the sum of numbers
