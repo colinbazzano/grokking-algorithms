@@ -119,3 +119,32 @@ To avoid collisions in hash tables, you'll need
 If you have 1 item in a hash table of 3, that is 1/3! If you are getting close to having a full
 hash table, you'll need to do what's called "resizing". A good rule of thumb is to create a hash table that is double the size.
 You should resize when your hash table is .7 load factor.
+
+## Graphs (in tandem with breadth-first search)
+
+    A graph, simply put, models a set of connections.
+
+Each graph is made up of:
+
+    Nodes - Think of it as yourself, and your friends are other nodes, and if directed related, are *neighbors*
+    Edges - Draws the line from one node to the other
+
+## Breadth First Search
+
+    BFS is an algorithm for graphs! It allows you to find the shortest distance between two things.
+
+You could:
+
+- Write a checkers AI that calculates the fewest moves to victory
+- Write a spell checker
+- Find the doctor closest to you in your network
+
+Think of going from one place to the other, and the number of steps you may take to get there.
+You could also think of the smallest number of moves to checkmate in a game of chess.
+
+_The algorithm to solve a shortest-path problem is called breadth-first search._
+
+In the book's example of Twin Peaks to Golden Gate Bridge, you have two steps:
+
+    1. Model the problem as a graph
+    2. Solve the problem using breadth-first search
