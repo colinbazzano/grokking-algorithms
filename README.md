@@ -22,6 +22,9 @@ log b (a) = c <<< logarithm || exponential >>> b^c = a
 
 where b is the base, c is the exponent, and a is called the argument
 
+Queues are _FIFO_ (First In, First Out)
+Stacks are _LIFO_ (Last In, First Out)
+
 ## Binary Search
 
 Try to guess what number I'm thinking of, 1-100. You would not be wise to start at 1 and count up, but better off starting at 50, eliminating half the numbers if I say "too low" or "too high" and then cut the next group in half.
@@ -121,3 +124,57 @@ To avoid collisions in hash tables, you'll need
 If you have 1 item in a hash table of 3, that is 1/3! If you are getting close to having a full
 hash table, you'll need to do what's called "resizing". A good rule of thumb is to create a hash table that is double the size.
 You should resize when your hash table is .7 load factor.
+
+## Graphs (in tandem with breadth-first search)
+
+    A graph, simply put, models a set of connections.
+
+Each graph is made up of:
+
+    Nodes - Think of it as yourself, and your friends are other nodes, and if directed related, are *neighbors*
+    Edges - Draws the line from one node to the other
+
+Directed Graph - the relationship is only one way. Say you have a friend, you are connected to them, but there friend's list doesn't extend beyond them.
+
+Undirected Graph - do not have arrows, and the relationship goes both ways.
+
+## Breadth First Search
+
+    BFS is an algorithm for graphs! It allows you to find the shortest distance between two things.
+
+You could:
+
+- Write a checkers AI that calculates the fewest moves to victory
+- Write a spell checker
+- Find the doctor closest to you in your network
+
+Think of going from one place to the other, and the number of steps you may take to get there.
+You could also think of the smallest number of moves to checkmate in a game of chess.
+
+_The algorithm to solve a shortest-path problem is called breadth-first search._
+
+In the book's example of Twin Peaks to Golden Gate Bridge, you have two steps:
+
+    1. Model the problem as a graph
+    2. Solve the problem using breadth-first search
+
+A few questions are answered when using BFS
+
+    Is there a path from node A to node B?
+    What is the shortest path from node A to node B?
+
+When thinking about the Mango Seller example, use it to remember that first-degree connections are better than second-degree, and second-degree is better than third-degree, etc.
+
+You'll want to search your closest connections first, and to do this we use another data structure, called a _queue_
+
+## Queue
+
+    FIFO - First In First Out
+    Video Game queue, when the server's are overloaded and you start up your game, you'll be loaded in in the order in which you showed up.
+
+    You *cannot* access random elements in the queue. You may only enqueue and/or dequeue.
+
+    Enqueue (push) - You add an item to the queue, that item is added to the END of the queue.
+    Dequeue (pop) - You are removing an item from the queue, that item was at the FRONT of the queue.
+
+Tree - A special type of graph, where _no edges ever point back_.

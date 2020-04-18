@@ -80,3 +80,9 @@ My Answer: O(n^2) because it will grow exponentially as the input grows.
 5.5 D is the best to use
 5.6 B could be used, as could D
 5.7 Any could be used, except for A
+
+6.1 (Breadth-first search) You would first go up, and then over to the right to reach the finish in 2 moves.
+
+6.2 Cab to Cat to the finish, Bat. 3 Moves.
+
+6.3 C, because you cannot shower before waking up. Shower is reliant on Waking Up
