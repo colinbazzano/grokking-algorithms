@@ -1,6 +1,8 @@
 # Grokking Algorithms
 
-Code to follow along while reading the book Grokking Algorithms
+Code to follow along while reading the book [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms).
+
+The author is Aditya Y. Bhargava, and you can find more about him at [adit.io](adit.io)
 
 ## Notes to be recalled on
 

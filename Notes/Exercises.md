@@ -1,5 +1,7 @@
 Exercises
 
+These are really more for personal recall, as they are my answers to the exercises. Ignore this and try the exercises out for yourself. Maybe at the end of my reading I'll create a Questions/My Answers section.
+
 ## Chapter 1
 
 **_Binary Search_**
