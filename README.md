@@ -20,6 +20,9 @@ log b (a) = c <<< logarithm || exponential >>> b^c = a
 
 where b is the base, c is the exponent, and a is called the argument
 
+Queues are _FIFO_ (First In, First Out)
+Stacks are _LIFO_ (Last In, First Out)
+
 ## Binary Search
 
 Try to guess what number I'm thinking of, 1-100. You would not be wise to start at 1 and count up, but better off starting at 50, eliminating half the numbers if I say "too low" or "too high" and then cut the next group in half.
@@ -129,6 +132,10 @@ Each graph is made up of:
     Nodes - Think of it as yourself, and your friends are other nodes, and if directed related, are *neighbors*
     Edges - Draws the line from one node to the other
 
+Directed Graph - the relationship is only one way. Say you have a friend, you are connected to them, but there friend's list doesn't extend beyond them.
+
+Undirected Graph - do not have arrows, and the relationship goes both ways.
+
 ## Breadth First Search
 
     BFS is an algorithm for graphs! It allows you to find the shortest distance between two things.
@@ -148,3 +155,24 @@ In the book's example of Twin Peaks to Golden Gate Bridge, you have two steps:
 
     1. Model the problem as a graph
     2. Solve the problem using breadth-first search
+
+A few questions are answered when using BFS
+
+    Is there a path from node A to node B?
+    What is the shortest path from node A to node B?
+
+When thinking about the Mango Seller example, use it to remember that first-degree connections are better than second-degree, and second-degree is better than third-degree, etc.
+
+You'll want to search your closest connections first, and to do this we use another data structure, called a _queue_
+
+## Queue
+
+    FIFO - First In First Out
+    Video Game queue, when the server's are overloaded and you start up your game, you'll be loaded in in the order in which you showed up.
+
+    You *cannot* access random elements in the queue. You may only enqueue and/or dequeue.
+
+    Enqueue (push) - You add an item to the queue, that item is added to the END of the queue.
+    Dequeue (pop) - You are removing an item from the queue, that item was at the FRONT of the queue.
+
+Tree - A special type of graph, where _no edges ever point back_.
