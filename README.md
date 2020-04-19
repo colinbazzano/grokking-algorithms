@@ -25,6 +25,9 @@ where b is the base, c is the exponent, and a is called the argument
 Queues are _FIFO_ (First In, First Out)
 Stacks are _LIFO_ (Last In, First Out)
 
+Need to find the shortest path in an unweighted graph? Use breadth-first search
+Need to find the shortest path in a weighted graph? Dijkstra's algorithm
+
 ## Binary Search
 
 Try to guess what number I'm thinking of, 1-100. You would not be wise to start at 1 and count up, but better off starting at 50, eliminating half the numbers if I say "too low" or "too high" and then cut the next group in half.
@@ -178,3 +181,30 @@ You'll want to search your closest connections first, and to do this we use anot
     Dequeue (pop) - You are removing an item from the queue, that item was at the FRONT of the queue.
 
 Tree - A special type of graph, where _no edges ever point back_.
+
+## Dijkstra's Algorithm
+
+In short, Dijkstra's Algorithm lets you answer "What's the shortest path to X?" for weighted graphs
+
+Breadth-first search will find the shortest, but if you were to add times to those paths, it may not be the shortest that is the quickest. That is where Dijkstra's algorithm to help find the fastest.
+
+4 Steps to Dijkstra's Algorithm:
+
+    1. Find the 'cheapest' node. This is the node you can get to in the least amount of time.
+    2. Check whether there's a cheaper path to the neighbors of the node. Update the costs of the neighbors of this node.
+    3. Repeat until you've done this for every node in the graph.
+    4. Calculate the final path
+
+In Dijkstra's algorithm, you assign a number or weight to each segment. It then finds the path with the smallest total weight.
+
+Each edge in the graph has a number associated with it. Those are called the _weights_
+
+We are creating a weighted graph.
+
+Dijkstra's algorithm only works with directed acyclic graphs, DAGs for short.
+
+You _may not_ use negative-weight edges in Dijkstra's algorithm.
+
+If you were to use negative-weight edges, you would need to look at Bellman-Ford algorithm.
+
+When using Dijkstra's, you will want to have your finish set to "infinity" distance away, so you can overwrite with the fastest path there, even if in the loop that's not the fastest of them all, it's the fastest for right now.
