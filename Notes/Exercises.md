@@ -90,3 +90,17 @@ My Answer: O(n^2) because it will grow exponentially as the input grows.
 7.1.1 Start -> 5 -> 2 -> 1 -> FINISH
 7.1.2 Start -> 10 -> 20 -> 30 -> FINISH
 7.1.3 START -> 2 -> 2 -> FINISH
+
+8.1 You would load the truck up with the biggest box, then move on an pick the second biggest box. This, of course, would be for using a greedy algorithm. It may not fit all the boxes in perfectly, and a strat more align with what Amazon does may work, but that wouldn't be a greedy algorithm.
+
+8.2 You would make a list of 1. most wanted to see 2. next in line. Would it be optimal? Not at all, you would want to start with the most wanted to see and see others that are closest to that not next in "want to see" list order.
+
+8.3 Quicksort seems greedy. You are selecting the most optimal number in each split.
+8.4 Breadth-first search is greedy. You will find the shortest path, and it will select the most optimal based on its selections.
+8.5 Dijkstra's is not greedy. It weighs out the options and carefully selects the best path.
+
+8.6 Yes. The input is going to be too large to solve this, and will be n!
+
+8.7 Yes. Just like the set-covering problem.
+
+8.8 No. You can figure this out, and it won't grow in input size.

@@ -208,3 +208,40 @@ You _may not_ use negative-weight edges in Dijkstra's algorithm.
 If you were to use negative-weight edges, you would need to look at Bellman-Ford algorithm.
 
 When using Dijkstra's, you will want to have your finish set to "infinity" distance away, so you can overwrite with the fastest path there, even if in the loop that's not the fastest of them all, it's the fastest for right now.
+
+## Greedy Algorithms
+
+NP-complete problems have no known fast solution. If you have an NP-complete problem, your best bet is to use an approximation algorithm.
+
+A greedy algorithm is simple, at each step, pick the optimal move.
+
+Enter: approximation algorithms. They will be judged by:
+
+    How fast they are
+    How close they are to the optimal solution
+
+### Sets
+
+You have a few things you can do with sets in particular.
+
+Set Union - Combine both sets.
+
+Set Intersection - Find the items that show up in both sets
+
+Set Difference - Subtract the items in one set from the items in another set.
+
+Short explanation of NP-completeness: some problems are famously hard to solve. The traveling salesperson and the set-covering problems are two examples.
+
+Some "giveaways" to a NP-Problem:
+
+- Your algorithm runs quickly with a handful of items but really slows down with more items.
+
+- "All combinations of X" usually point to an NP-complete problem.
+
+- Do you have to calculate "every possible version" of x because you can't break it down into smaller sub-problems? Might be NP-complete
+
+- If your problem involves a sequence and it's hard to solve, might be NP-complete
+
+- If you problem involves a set and it's hard to solve, might be NP-complete
+
+- Can you restate your problem as the set-covering problem or the traveling-salesperson? Definitely NP-complete.
