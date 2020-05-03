@@ -108,3 +108,11 @@ My Answer: O(n^2) because it will grow exponentially as the input grows.
 9.1 Yes. The MP3 player is 1lb and worth 1000 and if you combine all 3 1lb items, you cannot use your space to max capacity. And the 3lb items total to \$4500.
 
 9.2 Taking the Water, Food, and Camera is the best combination.
+
+9.3 The answer is 3, and the grid looks like so:
+
+/ c l u e s
+b 0 0 0 0 0
+l 0 1 0 0 0
+u 0 0 2 0 0
+e 0 0 0 3 0
