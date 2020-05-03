@@ -245,3 +245,27 @@ Some "giveaways" to a NP-Problem:
 - If you problem involves a set and it's hard to solve, might be NP-complete
 
 - Can you restate your problem as the set-covering problem or the traveling-salesperson? Definitely NP-complete.
+
+## Dynamic Programming
+
+Dynamic Programming starts by solving sub-problems and building up to solve the big problem.
+
+Using the knapsack problem, you are start to break it down and realize the power and importance of Dynamic Programming.
+
+If you have decimals and are drawing a grid to understand, you may have to take a more finer approach with 1.5 2 2.5 etc
+
+With Dynamic Programming in relation to the knapsack problem, you can take the item or not, no decimals in this case.
+
+Dynamic programming only works when each sub-problem is discrete- when it doesn't depend on other sub-problems.
+
+Dynamic programming is useful when you're trying to optimize something given a constraint.
+
+Dynamic programming involves:
+
+    Solution always involves a grid.
+
+    The values in the cells are usually what you're trying to optimize.
+
+    Each sell is a sub-problem, so think about how you can divide your problem down.
+
+Something neat to checkout is Levenshtein Distance. It measures the similarity of two strings.
