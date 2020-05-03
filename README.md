@@ -245,3 +245,9 @@ Some "giveaways" to a NP-Problem:
 - If you problem involves a set and it's hard to solve, might be NP-complete
 
 - Can you restate your problem as the set-covering problem or the traveling-salesperson? Definitely NP-complete.
+
+## Dynamic Programming
+
+Dynamic Programming starts by solving sub-problems and building up to solve the big problem.
+
+Using the knapsack problem, you are start to break it down and realize the power and importance of Dynamic Programming.
